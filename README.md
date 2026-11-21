@@ -17,7 +17,7 @@ Places in this bounty go purely by the video's YouTube views as the house reads 
 ## How the entry works
 
 - `VIDEO.json` names the video's address on YouTube.
-- `main.ts` (Node 22, standard library only) copies `VIDEO.json` from the repository root to `/output/VIDEO.json`, where the house's gate reads it. That is all the program has to do — the video itself is the entry.
+- `main.ts` (Node 22, standard library only) validates `VIDEO.json` and copies it from the repository root to `/output/VIDEO.json`, where the house's gate reads it. That is all the program has to do — the video itself is the entry.
 - The AI transcripts bundled with the submission show the agent choosing the source moment, deciding the creative (hook, captions, pitch wording) and cutting and rendering the clip with ffmpeg.
 
 ## License
